@@ -1,0 +1,17 @@
+Name,Code,Country,Length,Incident,DNF,Tyre Wear,SetupBoost,ComponentBoost
+Adelaide Street Circuit,Adelaide,Australia,3.78,13,2,2,Suspension,Suspension
+Bahrain International Circuit,Bahrain,Bahrain,5.412,17,4,4,Aero,Engine
+Circuito de Jerez Angel Nieto,Jerez,Spain,4.428,15,3,3,Chassis,Chassis
+Autodromo Nazionale del Mugello,Mugello,Italy,5.245,16,4,4,Aero,Engine
+Silverstone Circuit,Silverstone,United Kingdom,5.891,19,5,4,Aero,Engine
+Circuit de Magny-Cours Nevers,Magny,France,4.411,16,3,3,Suspension,Chassis
+Nurburgring GP Circuit,Nurburgring GP,Germany,5.148,17,3,3,Chassis,Aero
+Kyalami Grand Prix Circuit,Kyalami,South Africa,4.529,16,3,4,Suspension,Suspension
+Autodromo Jose Carlos Pace,Interlagos,Brazil,4.309,18,4,3,Chassis,Engine
+Daytona International Speedway RC,Daytona,United States,5.729,19,5,2,Aero,Engine
+Sepang International Circuit,Sepang,Malaysia,5.543,18,4,4,Aero,Engine
+Circuit de Spa-Francorshamps,Spa,Belgium,7.004,15,4,2,Aero,Engine
+Autodromo Nazionale di Monza,Monza,Italy,5.793,19,4,2,Aero,Engine
+Hockenheimring,Hockenheim,Germany,4.574,19,4,3,Aero,Aero
+Circuit of The Americas,CoTA,United States,5.513,16,3,3,Chassis,Engine
+Suzuka Circuit,Suzuka,Japan,5.807,15,3,3,Aero,Chassis

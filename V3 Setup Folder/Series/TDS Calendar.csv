@@ -1,0 +1,13 @@
+﻿Title,Event No,Order No,R1 Length,R2 Length,Venue
+Brazilian Event,1,1,28,22,Interlagos
+American Event,2,2,22,18,CoTA
+South African Event,3,3,26,20,Kyalami
+Bahrain Event,4,4,22,18,Bahrain
+Spanish Event,5,5,26,22,Jerez
+French Event,6,6,28,22,Magny
+German Event,7,7,24,18,Nurburgring GP
+British Event,8,8,20,16,Silverstone
+Italian Event,9,9,22,18,Mugello
+Japanese Event,10,10,20,16,Suzuka
+Malaysian Event,11,11,22,18,Sepang
+Australian Event,12,12,32,24,Adelaide
