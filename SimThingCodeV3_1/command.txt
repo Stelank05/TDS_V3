@@ -1,0 +1,1 @@
+C:/Users/Steph/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/Steph/Documents/Excel Sims/Sim Thing/SimThingCodeV3_1/main.py"
