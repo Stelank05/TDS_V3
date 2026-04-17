@@ -1,31 +1,32 @@
 ﻿Car No,Driver Name,Team Code
-#1,Lando Norris,Super Corby
-#2,Pato O'Ward,Super Corby
-#3,Oscar Piastri,Super Corby
-#4,Felix Rosenqvist,Project D
-#5,Callum Ilott,Project D
-#6,Taylor Barnard,Project D
-#7,Christian Lundgaard,Bruh
-#8,Rinus VeeKay,Bruh
-#9,Toby Sowery,Bruh
-#10,Pascal Wehrlein,Tactically
-#11,Colton Herta,Tactically
-#12,Gabriel Bortoleto,Tactically
-#14,George Russell,BKT
-#15,Norman Nato,BKT
-#16,Mitch Evans,BKT
-#17,Alex Palou,Hunter
-#18,Yuki Tsunoda,Hunter
-#19,Andrea Kimi Antonelli,Hunter
-#20,Max Verstappen,URT
-#21,Sting Ray Robb,URT
-#22,Zane Maloney,URT
-#23,Charles Leclerc,Sim Party
-#24,Alexander Albon,Sim Party
-#25,Mick Schumacher,Sim Party
-#26,Kyle Kirkwood,Centurion
-#27,Abbi Pulling,Centurion
-#28,Dennis Hauger,Centurion
-#29,Pierre Gasly,Apex
-#30,Doriane Pin,Apex
-#31,Dan Ticktum,Apex
+#1,Pato O'Ward,Super Corby
+#24,Lando Norris,Super Corby
+#27,Oscar Piastri,Super Corby
+#5,David Malukas,Super Corby
+#7,Rinus VeeKay,Bruh
+#8,Christian Lundgaard,Bruh
+#9,Tuukka Taponen,Bruh
+#28,Doriane Pin,APR GP
+#29,Dan Ticktum,APR GP
+#30,Victor Martins,APR GP
+#97,Yuki Tsunoda,98-99R
+#98,Ayumu Iwasa,98-99R
+#99,Kyffin Simpson,98-99R
+#11,Abbi Pulling,Centurion
+#12,Kyle Kirkwood,Centurion
+#10,Alex Palou,Centurion
+#90,Callum Ilott,Project D
+#91,Hunter McElrea,Project D
+#92,Ritomo Miyata,Project D
+#16,Charles Leclerc,Sim Party
+#23,Alexander Albon,Sim Party
+#47,Mick Schumacher,Sim Party
+#18,Jamie Chadwick,Stellar
+#14,Chloe Chambers,Stellar
+#22,Aurelia Nobels,Stellar
+#100,George Russell,Tactically
+#101,Colton Herta,Tactically
+#102,Theo Pourchaire,Tactically
+#69,Dino Beganovic,Blue Flag
+#4,Kimi Antonelli,Blue Flag
+#20,Arvid Lindblad,Blue Flag

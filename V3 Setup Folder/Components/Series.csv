@@ -1,2 +1,2 @@
-Name,Code,Season Folder,Calendar File,Entry List File
-TDS,TDS,TDS6,TDS Calendar.csv,TDS Entry List.csv
+Name,Code,Season Folder,Calendar File,Entry List File,BOP,Log Base,Subtractor
+TDS,TDS,TDS12,TDS Calendar.csv,TDS Entry List.csv,FALSE,1.0075,700
