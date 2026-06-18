@@ -25,7 +25,7 @@ class Data:
     series: list[Series] = []
 
     def setup() -> None:
-        Data.root_folder = os.getcwd().replace("\\SimThingCodeV3Python", "")
+        Data.root_folder = os.getcwd().replace("\\SimThingCodeV3_3", "")
         Data.components_folder = os.path.join(Data.root_folder, "V3 Setup Folder", "Components")
         Data.series_folder = os.path.join(Data.root_folder, "V3 Setup Folder", "Series")
         Data.results_folder = os.path.join(Data.root_folder, "Results")

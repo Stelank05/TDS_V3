@@ -133,6 +133,8 @@ def get_event(event: str, events: list[Event], start: int = -1, end: int = -1) -
     else: return get_event(event, events, middle + 1, end)
 
 def get_balance_table(table: str, tables: list[BalanceTable], start: int = -1, end: int = -1) -> BalanceTable:
+    if len(tables) == 0: return None
+    
     if start == -1 and end == -1:
         sort_balance_tables(tables)
         start = 0
