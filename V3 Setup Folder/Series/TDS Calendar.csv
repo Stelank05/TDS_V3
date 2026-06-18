@@ -1,13 +1,21 @@
 ﻿Title,Event No,Order No,R1 Length,R2 Length,Venue
-Brazilian Event,1,1,28,22,Interlagos
-American Event,2,2,22,18,CoTA
-South African Event,3,3,26,20,Kyalami
-Bahrain Event,4,4,22,18,Bahrain
-Spanish Event,5,5,26,22,Jerez
-French Event,6,6,28,22,Magny
-German Event,7,7,24,18,Nurburgring GP
-British Event,8,8,20,16,Silverstone
-Italian Event,9,9,22,18,Mugello
-Japanese Event,10,10,20,16,Suzuka
-Malaysian Event,11,11,22,18,Sepang
-Australian Event,12,12,32,24,Adelaide
+Australian Event,1,1,40,34,Adelaide
+Chinese Event,2,2,30,24,Shanghai
+Malaysian Event,3,3,29,24,Sepang
+Singapore Event,4,4,31,26,Singapore
+Japanese Event,5,5,28,23,Suzuka
+Motegi Event,6,6,121,81,Motegi Oval
+Portuguese Event,7,7,39,32,Estoril
+Spanish Event,8,8,37,30,Jerez
+French Event,9,9,37,30,Magny-Cours
+German Event,10,10,32,26,Nurburgring
+Italian Event,11,11,31,25,Mugello
+Belgian Event,12,12,23,19,Spa
+European Event,13,13,35,28,Barcelona
+British Event,14,14,28,23,Silverstone
+Turkish Event,15,15,30,25,Istanbul
+Brazilian Event,16,16,38,31,Interlagos
+Mexican Event,17,17,38,31,Mexico City
+American Event,18,18,48,40,Long Beach
+Indianapolis Event,19,19,75,50,Indianapolis
+TDS13 Finale,20,20,75,50,Daytona

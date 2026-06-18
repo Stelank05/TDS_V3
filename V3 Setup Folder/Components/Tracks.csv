@@ -1,17 +1,40 @@
-Name,Code,Country,Length,Incident,DNF,Tyre Wear,SetupBoost,ComponentBoost
-Adelaide Street Circuit,Adelaide,Australia,3.78,13,2,2,Suspension,Suspension
-Bahrain International Circuit,Bahrain,Bahrain,5.412,17,4,4,Aero,Engine
-Circuito de Jerez Angel Nieto,Jerez,Spain,4.428,15,3,3,Chassis,Chassis
-Autodromo Nazionale del Mugello,Mugello,Italy,5.245,16,4,4,Aero,Engine
-Silverstone Circuit,Silverstone,United Kingdom,5.891,19,5,4,Aero,Engine
-Circuit de Magny-Cours Nevers,Magny,France,4.411,16,3,3,Suspension,Chassis
-Nurburgring GP Circuit,Nurburgring GP,Germany,5.148,17,3,3,Chassis,Aero
-Kyalami Grand Prix Circuit,Kyalami,South Africa,4.529,16,3,4,Suspension,Suspension
-Autodromo Jose Carlos Pace,Interlagos,Brazil,4.309,18,4,3,Chassis,Engine
-Daytona International Speedway RC,Daytona,United States,5.729,19,5,2,Aero,Engine
-Sepang International Circuit,Sepang,Malaysia,5.543,18,4,4,Aero,Engine
-Circuit de Spa-Francorshamps,Spa,Belgium,7.004,15,4,2,Aero,Engine
-Autodromo Nazionale di Monza,Monza,Italy,5.793,19,4,2,Aero,Engine
-Hockenheimring,Hockenheim,Germany,4.574,19,4,3,Aero,Aero
-Circuit of The Americas,CoTA,United States,5.513,16,3,3,Chassis,Engine
-Suzuka Circuit,Suzuka,Japan,5.807,15,3,3,Aero,Chassis
+Name,Code,Country,Track Type,Length,Incident,DNF,Tyre Wear,SetupBoost,ComponentBoost,
+Adelaide Street Circuit,Adelaide,Australia,Street Course,3.78,1,1,2,Suspension,Chassis,Suspension
+Bahrain International Circuit,Bahrain,Bahrain,Road Course,5.412,4,4,4,Aero,Aero,Engine
+Circuito de Jerez Angel Nieto,Jerez,Spain,Road Course,4.428,2,3,3,Chassis,Chassis,Suspension
+Autodromo Nazionale del Mugello,Mugello,Italy,Road Course,5.245,4,4,4,Aero,Aero,Engine
+Silverstone Circuit,Silverstone,United Kingdom,Road Course,5.891,5,4,4,Aero,Aero,Engine
+Circuit de Magny-Cours Nevers,Magny-Cours,France,Road Course,4.411,2,3,3,Suspension,Chassis,Suspension
+Nurburgring GP Circuit,Nurburgring,Germany,Road Course,5.148,3,3,3,Chassis,Aero,Chassis
+Kyalami Grand Prix Circuit,Kyalami,South Africa,Road Course,4.529,2,4,4,Suspension,Chassis,Suspension
+Autodromo Jose Carlos Pace,Interlagos,Brazil,Road Course,4.309,4,3,3,Chassis,Aero,Engine
+Daytona International Speedway,Daytona,United States,Road Course,4.023,1,1,1,Aero,Aero,Engine
+Daytona International Speedway RC,Daytona RC,United States,Road Course,5.729,5,2,2,Aero,Aero,Engine
+Sepang International Circuit,Sepang,Malaysia,Road Course,5.543,4,4,4,Aero,Chassis,Engine
+Circuit de Spa-Francorshamps,Spa,Belgium,Road Course,7.004,4,2,2,Aero,Aero,Engine
+Autodromo Nazionale di Monza,Monza,Italy,Road Course,5.793,4,2,2,Aero,Aero,Engine
+Hockenheimring,Hockenheim,Germany,Road Course,4.574,4,3,3,Chassis,Aero,Chassis
+Circuit of The Americas,CoTA,United States,Road Course,5.513,3,3,3,Chassis,Aero,Engine
+Suzuka Circuit,Suzuka,Japan,Road Course,5.807,2,3,3,Chassis,Aero,Chassis
+Fuji Speedway,Fuji,Japan,Road Course,4.563,3,4,2,Aero,Aero,Engine
+Circuit de Barcelona-Catalunya,Barcelona,Spain,Road Course,4.657,3,3,4,Chassis,Chassis,Engine
+Istanbul Park,Istanbul,Turkiye,Road Course,5.338,3,3,3,Aero,Aero,Engine
+Marina Bay Street Circuit,Singapore,Singapore,Street Course,4.927,1,2,2,Suspension,Aero,Engine
+Dubai Autodrome,Dubai,UAE,Road Course,5.39,5,4,3,Chassis,Chassis,Engine
+Circuit de Monaco,Monaco,Monaco,Street Course,3.37,1,1,1,Chassis,Aero,Chassis
+Streets of Long Beach,Long Beach,United States,Street Course,3.167,1,1,1,Chassis,Aero,Chassis
+Imola Circuit,Imola,Italy,Road Course,4.909,2,2,3,Chassis,Chassis,Suspension
+Phoenix Raceway,Phoenix,United States,Short Oval,2.414,1,1,1,Suspension,Aero,Engine
+WorldWide Technology Raceway,Gateway,United States,Short Oval,2.012,1,1,1,Aero,Aero,Chassis
+Texas Motor Speedway,Texas,United States,Speedway,2.414,1,1,1,Aero,Aero,Engine
+Streets of Arlington,Arlington,United States,Street Course,4.368,1,1,3,Suspension,Aero,Engine
+Indianapolis Motor Speedway,Indianapolis,United States,Speedway,4.023,1,1,1,Aero,Aero,Engine
+Indianapolis Motor Speedway RC,IMS Road,United States,Road Course,3.923,3,2,2,Suspension,Aero,Engine
+Shanghai International Circuit,Shanghai,China,Road Course,5.451,4,3,2,Aero,Aero,Engine
+Twin Ring Motegi Road Course,Motegi RC,Japan,Road Course,4.801,3,3,3,Chassis,Aero,Engine
+Twin Ring Motegi Oval,Motegi Oval,Japan,Speedway,2.493,1,1,1,Aero,Aero,Engine
+Algarve International Circuit,Portimao,Portugal,Road Course,4.653,2,2,3,Aero,Aero,Engine
+Circuito do Estoril,Estoril,Portugal,Road Course,4.182,3,2,3,Aero,Chassis,Engine
+Autodromo Hermanos Rodriguez,Mexico City,Mexico,Road Course,4.304,3,2,3,Aero,Aero,Engine
+Rockingham Motor Speedway RC,Rockingham RC,United Kingdom,Road Course,3.299,3,2,3,Aero,Chassis,Engine
+Rockingham Motor Speedway,Rockingham,United Kingdom,Speedway,2.38,1,1,1,Aero,Aero,Engine
