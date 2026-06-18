@@ -4,14 +4,20 @@ class Track:
         self.track_code: str = track_data[1]
         self.country: str = track_data[2]
 
-        self.track_length: float = float(track_data[3])
+        self.track_type: str = track_data[3]
+        self.track_length: float = float(track_data[4])
 
-        self.incident: int = int(track_data[4])
-        self.dnf: int = int(track_data[5])
-        self.tyre_wear: int = int(track_data[6])
+        self.incident: int = int(track_data[5])
+        self.dnf: int = int(track_data[6])
+        self.tyre_wear: int = int(track_data[7])
 
-        self.setup_boost: str = track_data[7]
-        self.component_boost: str = track_data[8]
+        self.setup_boost: str = track_data[8]
+        self.component_boosts: list[str] = [] # track_data[8]
+
+        for i in range(9, len(track_data)):
+            self.component_boosts.append(track_data[i])
+
+        # print(f"{self.track_code}: {self.component_boosts}")
 
     def __str__(self) -> str: return f"{self.track_code}"
     
@@ -24,4 +30,4 @@ class Track:
         print(f"DNF: {self.dnf}")
         print(f"Tyre Wear: {self.tyre_wear}")
         print(f"Setup Boost: {self.setup_boost}")
-        print(f"Component Boost: {self.component_boost}\n")
+        print(f"Component Boost: {self.component_boosts}\n")

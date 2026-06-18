@@ -1,3 +1,4 @@
+import math
 import os
 # import random
 
@@ -46,12 +47,14 @@ def load_entrants(event: Event) -> list[Entrant]:
 
     new_entrant: Entrant
 
-    balance_folder: str = os.path.join(Data.series_folder, f"{current_series.series_code} Balance of Performance", f"Event {event.event_no}.csv")
-
-    balance_data: list[str] = read_file(balance_folder)
     balance_tables: list[BalanceTable] = []
+    
+    if current_series.do_bop:
+        balance_folder: str = os.path.join(Data.series_folder, f"{current_series.series_code} Balance of Performance", f"Event {event.event_no}.csv")
 
-    for i in range(1, len(balance_data)): balance_tables.append(BalanceTable(balance_data[i].split(',')))
+        balance_data: list[str] = read_file(balance_folder)
+
+        for i in range(1, len(balance_data)): balance_tables.append(BalanceTable(balance_data[i].split(',')))
 
     team: Team
 
@@ -60,10 +63,13 @@ def load_entrants(event: Event) -> list[Entrant]:
         if entrant_details[0] != "Car No":
             team = get_team(entrant_details[2], Data.teams)
             new_entrant = Entrant([entrant_details[0], RunningState.RUNNING, get_driver(entrant_details[1], Data.drivers), team])
-            new_entrant.set_ovr(event.venue, get_balance_table(team.team_code, balance_tables))
+            new_entrant.set_ovr(event.venue, current_series.do_bop, current_series.log_base, current_series.subtractor, get_balance_table(team.team_code, balance_tables))
             entrants.append(new_entrant)
 
     return entrants
+
+def reset_teams() -> None:
+    for team in Data.teams: team.reserve_available = True
 
 def do_continue() -> bool:
     print("Continue Program?\nY - Yes\nN - No\nR - Reload Data")
@@ -95,5 +101,6 @@ while continue_simulation:
     if current_event.order_no == len(all_events): break
     if continue_simulation:
         current_event = all_events[current_event.order_no]
+        reset_teams()
 
 input("Program Ended\nPress Enter to Exit")
