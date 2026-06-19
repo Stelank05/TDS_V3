@@ -21,8 +21,8 @@ class Series:
     dnf_chance: int = 80
     crash_chance: int = 80
     
-    dnf_reasons_spine: list[str] = ["Suspension", "Wing Failure", "Cooling"]
-    dnf_reasons_engine: list[str] = ["Engine", "Hybrid", "Gearbox", "Electronics", "Fuel System"]
+    dnf_reasons_spine: list[str] = ["Suspension", "Gearbox", "Cooling"]
+    dnf_reasons_engine: list[str] = ["Engine", "Hybrid", "Electronics", "Fuel System"]
     dsq_reasons: list[str] = ["Underweight", "Wing Flex", "Illegal Part", "Fuel Sample", "Plank Wear"]
     wdn_reasons: list[str] = ["Illness", "Injury", "Damage"]
 
@@ -75,9 +75,15 @@ class Series:
         
         self.session = "Practice"
 
-        if self.current_event.venue.track_type == "Street Course": self.crash_chance = int(self.crash_chance * 0.75)
-        if self.current_event.venue.track_type == "Speedway": self.crash_chance = int(self.crash_chance * 2)
-        if self.current_event.venue.track_type == "Short Oval": self.crash_chance = int(self.crash_chance * 2)
+        if self.current_event.venue.track_type == "Street Course":
+            Series.max_dnf -= 3
+            Series.crash_chance = int(Series.crash_chance * 0.8)
+        if self.current_event.venue.track_type == "Speedway":
+            Series.max_dnf = int(Series.max_dnf * 8)
+            Series.crash_chance = int(Series.crash_chance * 6.5)
+        if self.current_event.venue.track_type == "Short Oval":
+            Series.max_dnf = int(Series.max_dnf * 8)
+            Series.crash_chance = int(Series.crash_chance * 6.5)
 
         self.entrants = entrants.copy()
         self.set_spacers()
@@ -232,10 +238,12 @@ class Series:
                 spine_wear *= random.randint(2, 4)
                 engine_wear *= random.randint(2, 4)
         if tyre_wear == max_tyre_wear:
-            chance = random.randint(1, 2 * Series.dnf_chance)
+            chance = random.randint(1, 3 * Series.dnf_chance)
             # print(f"{entrant.driver.driver_name} TYRE {chance}")
-            if chance == 2 * Series.dnf_chance: return [1, "Tyre Failure"]
-            elif chance <= 20:
+            if chance == 3 * Series.dnf_chance:
+                if entrant.tyre_performance < 80: return [1, "Tyre Failure"]
+                else: tyre_wear -= random.randint(4, 6)
+            elif chance <= 15:
                 tyre_wear *= random.randint(2, 4)
         if spine_wear >= max_spine_wear - 1:
             chance = random.randint(1, Series.dnf_chance)
@@ -424,7 +432,7 @@ class Series:
             print(f"{race_number}: Lap {lap + 1}/{self.race_length}:")
             self.display_entrants(0, len(self.entrants))
             self.save_entrants(os.path.join(race_folder, f"{file_number} - Lap {lap + 1}.csv")); file_number += 1
-            input()
+            # input()
         
         self.race_over = True
         self.scrutineering()
@@ -438,7 +446,9 @@ class Series:
         else: entrant.state = RunningState.RETIRED
 
         match reason:
-            case "Spine": entrant.dnf_reason = random.choice(Series.dnf_reasons_spine)
+            case "Spine":
+                if entrant.spine_reliability < 80: entrant.dnf_reason = random.choice(Series.dnf_reasons_spine + ["Wing Failure"])
+                else: entrant.dnf_reason = random.choice(Series.dnf_reasons_spine)
             case "Engine": entrant.dnf_reason = random.choice(Series.dnf_reasons_engine)
             case _: entrant.dnf_reason = reason
 

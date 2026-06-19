@@ -14,7 +14,8 @@ class Event:
         self.order_no: int = int(event_details[2])
 
         self.race_1_length: int = int(event_details[3])
-        if not self.is_oval: self.race_2_length: int = int(event_details[4])
+        self.race_2_length: int = 0
+        if not self.is_oval: self.race_2_length = int(event_details[4])
 
     
     def __str__(self) -> str: return f"Event {self.event_no} - {self.event_title}"
